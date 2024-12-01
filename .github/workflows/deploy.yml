@@ -18,6 +18,10 @@ jobs:
       - name: Repository 파일 출력하기
         run: ls  # 레포지토리의 파일 모두 잘 받아와짐!
 
+      # 무조건 먼저 해야 하는 것 - 의존성 설치
+      - name: 의존성 설치
+        run: npm i
+
       - name: 빌드하기
         run: npm run build
 
